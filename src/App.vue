@@ -81,7 +81,7 @@
        
       </v-toolbar-title><v-btn icon style="background-color: #33FF33;">
         <v-icon>settings_applications</v-icon>
-        </v-btn> <span class="hidden-sm-and-down title">Main tile</span>
+        </v-btn> <span class="hidden-sm-and-down title">Start Menu</span>
       <v-spacer></v-spacer>
       <v-btn icon>
         <v-icon>search</v-icon>
@@ -89,6 +89,7 @@
       <v-btn icon>
         <v-icon>more_vert</v-icon>
       </v-btn>
+
       <!-- <v-btn icon large>
         <v-avatar size="32px" tile>
           <img
@@ -99,159 +100,150 @@
       </v-btn> -->
     </v-toolbar>
     <v-content style="background-color: #E6E6E6;">
-     
-      <!-- <v-container fluid fill-height>
-        <v-layout>
-          <v-tooltip right>
-          </v-tooltip>
-        </v-layout>
-      </v-container> -->
-      <v-layout row>
-      <v-flex xs12 sm6>
-        <v-toolbar color="indigo" dark>
-          <v-toolbar-side-icon></v-toolbar-side-icon>
-          <v-toolbar-title>Discover</v-toolbar-title>
-          <v-spacer></v-spacer>
-          <v-btn icon>
-            <v-icon>search</v-icon>
-          </v-btn>
-        </v-toolbar>
-        <v-card>
-          <v-container fluid grid-list-md>
-            <v-layout row wrap>
-              <v-flex
-                v-for="card in cards"
-                v-bind="{ [`xs${card.flex}`]: true }"
-                :key="card.title"
-              >
-                <v-card>
-                  <v-card-media
-                    :src="card.src"
-                    height="200px"
-                  >
-                    <v-container fill-height fluid>
-                      <v-layout fill-height>
-                        <v-flex xs12 align-end flexbox>
-                          <span class="headline white--text" v-text="card.title"></span>
-                        </v-flex>
-                      </v-layout>
-                    </v-container>
-                  </v-card-media>
-                  <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <v-btn icon>
-                      <v-icon>favorite</v-icon>
-                    </v-btn>
-                    <v-btn icon>
-                      <v-icon>bookmark</v-icon>
-                    </v-btn>
-                    <v-btn icon>
-                      <v-icon>share</v-icon>
-                    </v-btn>
-                  </v-card-actions>
-                </v-card>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card>
-      </v-flex>
-      <v-flex xs12 sm6>
-        <v-toolbar color="indigo" dark>
-          <v-toolbar-side-icon></v-toolbar-side-icon>
-          <v-toolbar-title>Discover</v-toolbar-title>
-          <v-spacer></v-spacer>
-          <v-btn icon>
-            <v-icon>search</v-icon>
-          </v-btn>
-        </v-toolbar>
-        <v-card>
-          <v-container fluid grid-list-md>
-            <v-layout row wrap>
-              <v-flex
-                v-for="card in cards"
-                v-bind="{ [`xs${card.flex}`]: true }"
-                :key="card.title"
-              >
-                <v-card>
-                  <v-card-media
-                    :src="card.src"
-                    height="200px"
-                  >
-                    <v-container fill-height fluid>
-                      <v-layout fill-height>
-                        <v-flex xs12 align-end flexbox>
-                          <span class="headline white--text" v-text="card.title"></span>
-                        </v-flex>
-                      </v-layout>
-                    </v-container>
-                  </v-card-media>
-                  <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <v-btn icon>
-                      <v-icon>favorite</v-icon>
-                    </v-btn>
-                    <v-btn icon>
-                      <v-icon>bookmark</v-icon>
-                    </v-btn>
-                    <v-btn icon>
-                      <v-icon>share</v-icon>
-                    </v-btn>
-                  </v-card-actions>
-                </v-card>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card>
-      </v-flex>
-      <v-flex xs12 sm6>
-        <v-toolbar color="indigo" dark>
-          <v-toolbar-side-icon></v-toolbar-side-icon>
-          <v-toolbar-title>Discover</v-toolbar-title>
-          <v-spacer></v-spacer>
-          <v-btn icon>
-            <v-icon>search</v-icon>
-          </v-btn>
-        </v-toolbar>
-        <v-card>
-          <v-container fluid grid-list-md>
-            <v-layout row wrap>
-              <v-flex
-                v-for="card in cards"
-                v-bind="{ [`xs${card.flex}`]: true }"
-                :key="card.title"
-              >
-                <v-card>
-                  <v-card-media
-                    :src="card.src"
-                    height="200px"
-                  >
-                    <v-container fill-height fluid>
-                      <v-layout fill-height>
-                        <v-flex xs12 align-end flexbox>
-                          <span class="headline white--text" v-text="card.title"></span>
-                        </v-flex>
-                      </v-layout>
-                    </v-container>
-                  </v-card-media>
-                  <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <v-btn icon>
-                      <v-icon>favorite</v-icon>
-                    </v-btn>
-                    <v-btn icon>
-                      <v-icon>bookmark</v-icon>
-                    </v-btn>
-                    <v-btn icon>
-                      <v-icon>share</v-icon>
-                    </v-btn>
-                  </v-card-actions>
-                </v-card>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-card>
-      </v-flex>
-      </v-layout>
+      <!-- File Flex -->
+      
+      <v-toolbar dense>
+        <v-toolbar-title>FILE</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-btn icon>
+          <v-icon>view_list</v-icon>
+        </v-btn>
+      </v-toolbar>
+      <v-card id="card-file">
+      <section class="card-flex1">
+        
+        <div class="card-flex1--content">
+          <div class="card-flex1-column-item-top"><v-icon style="font-size: 90px;">note_add</v-icon></div>
+          <div class="card-flex1-column-item-bottom" style="font-size: 28px;">New</div>
+        </div>
+        <div class="card-flex1--content">
+        <div class="card-flex1-column-item-top"><v-icon style="font-size: 90px;">folder_open</v-icon></div>
+          <div class="card-flex1-column-item-bottom" style="font-size: 28px;">Open</div>
+        </div>
+        <div class="card-flex1--content">
+        <div class="card-flex1-column-item-top"><v-icon style="font-size: 90px;">save_alt</v-icon></div>
+          <div class="card-flex1-column-item-bottom" style="font-size: 28px;">Save</div>
+        </div>
+        <div class="card-flex1--content">
+          <div class="card-flex1-column-item-top"><v-icon style="font-size: 90px;">compare_arrows</v-icon></div>
+          <div class="card-flex1-column-item-bottom" style="font-size: 28px;">Compare</div>
+        </div>
+        <div class="card-flex1--content">
+           <div class="card-flex1-column-item-top"><v-icon style="font-size: 90px;">list</v-icon></div>
+          <div class="card-flex1-column-item-bottom" style="font-size: 28px;">Create BOM</div>
+        </div>
+        <div class="card-flex1--content">
+        <div class="card-flex1-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex1-column-item-bottom" style="font-size: 28px;">Empty</div>
+        </div>
+        <div class="card-flex1--content">
+        <div class="card-flex1-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex1-column-item-bottom" style="font-size: 28px;">Empty</div>
+        </div>
+        <div class="card-flex1--content">
+        <div class="card-flex1-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex1-column-item-bottom" style="font-size: 28px;">Empty</div>
+        </div>
+        <div class="card-flex1--content">
+        <div class="card-flex1-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex1-column-item-bottom" style="font-size: 28px;">Empty</div>
+        </div>
+      </section>
+      </v-card>
+      <!-- End of File Flex -->
+      <!-- Net Flex -->
+      
+      <v-toolbar dense>
+        <v-toolbar-title>NET</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-btn icon>
+          <v-icon>view_list</v-icon>
+        </v-btn>
+      </v-toolbar>
+      <v-card id="card-net">
+      <section class="card-flex2">
+        
+        <div class="card-flex2--content">
+          <div class="card-flex2-column-item-top"><v-icon style="font-size: 90px;">image_search</v-icon></div>
+          <div class="card-flex2-column-item-bottom" style="font-size: 28px;">Monitoring</div>
+        </div>
+        <div class="card-flex2--content">
+        <div class="card-flex2-column-item-top side-off" ><v-icon style="font-size: 60px;">settings</v-icon><v-icon style="font-size: 60px;">code</v-icon><v-icon style="font-size: 60px;">folder_open</v-icon></div>
+          <div class="card-flex2-column-item-bottom" style="font-size: 28px;">Offline Config</div>
+        </div>
+        <div class="card-flex2--content">
+        <div class="card-flex2-column-item-top side-off"><v-icon style="font-size: 60px;">settings</v-icon><v-icon style="font-size: 60px;">code</v-icon><v-icon style="font-size: 60px;">cloud_queue</v-icon></div>
+          <div class="card-flex2-column-item-bottom" style="font-size: 28px;">Online Config</div>
+        </div>
+        <div class="card-flex2--content">
+          <div class="card-flex2-column-item-top side-off"><v-icon style="font-size: 60px;">settings</v-icon><v-icon style="font-size: 60px;">arrow_forward</v-icon><v-icon style="font-size: 60px;">cloud_queue</v-icon></div>
+          <div class="card-flex2-column-item-bottom" style="font-size: 28px;">Apply Config</div>
+        </div>
+        <div class="card-flex2--content">
+           <div class="card-flex2-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex2-column-item-bottom" style="font-size: 28px;">Empty</div>
+        </div>
+        <div class="card-flex2--content">
+        <div class="card-flex2-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex2-column-item-bottom" style="font-size: 28px;">Empty</div>
+        </div>
+        <div class="card-flex2--content">
+        <div class="card-flex2-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex2-column-item-bottom" style="font-size: 28px;">Empty</div>
+        </div>
+        <div class="card-flex2--content">
+        <div class="card-flex2-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex2-column-item-bottom" style="font-size: 28px;">Empty</div>
+        </div>
+        <div class="card-flex2--content">
+        <div class="card-flex2-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex2-column-item-bottom" style="font-size: 28px;">Empty</div>
+        </div>
+      </section>
+      </v-card>
+      <!-- End of Net Flex -->
+      <!-- Simul Flex -->
+      
+      <v-toolbar dense>
+        <v-toolbar-title>SIMULATION</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-btn icon>
+          <v-icon>view_list</v-icon>
+        </v-btn>
+      </v-toolbar>
+      <v-card id="card-simul">
+      <section class="card-flex3">
+        
+        <div class="card-flex3--content">
+        <div class="card-flex3-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex3-column-item-bottom" style="font-size: 28px;">Empty</div></div>
+        <div class="card-flex3--content">
+        <div class="card-flex3-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex3-column-item-bottom" style="font-size: 28px;">Empty</div></div>
+        <div class="card-flex3--content">
+        <div class="card-flex3-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex3-column-item-bottom" style="font-size: 28px;">Empty</div></div>
+        <div class="card-flex3--content">
+        <div class="card-flex3-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex3-column-item-bottom" style="font-size: 28px;">Empty</div></div>
+        <div class="card-flex3--content">
+        <div class="card-flex3-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex3-column-item-bottom" style="font-size: 28px;">Empty</div></div>
+        <div class="card-flex3--content">
+        <div class="card-flex3-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex3-column-item-bottom" style="font-size: 28px;">Empty</div></div>
+        <div class="card-flex3--content">
+        <div class="card-flex3-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex3-column-item-bottom" style="font-size: 28px;">Empty</div></div>
+        <div class="card-flex3--content">
+        <div class="card-flex3-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex3-column-item-bottom" style="font-size: 28px;">Empty</div></div>
+          <div class="card-flex3--content">
+        <div class="card-flex3-column-item-top"><v-icon style="font-size: 90px;">watch_later</v-icon></div>
+          <div class="card-flex3-column-item-bottom" style="font-size: 28px;">Empty</div></div>
+      </section>
+      </v-card>
+      <!-- End of Simul Flex -->
     </v-content>
 
     <!-- <v-btn
@@ -491,18 +483,36 @@ export default {
     right: true,
     bottom: true,
     left: false,
-    transition: 'slide-y-reverse-transition',
-    cards: [
-      { title: 'Pre-fab homes', src: 'https://vuetifyjs.com/static/doc-images/cards/house.jpg', flex: 12 },
-      { title: 'Favorite road trips', src: 'https://vuetifyjs.com/static/doc-images/cards/road.jpg', flex: 6 },
-      { title: 'Best airlines', src: 'https://vuetifyjs.com/static/doc-images/cards/plane.jpg', flex: 6 }
-    ]
-    }),
+    transition: 'slide-y-reverse-transition'
+    // cards: [
+    //   { title: 'Pre-fab homes', src: 'https://vuetifyjs.com/static/doc-images/cards/house.jpg', flex: 12 },
+    //   { title: 'Favorite road trips', src: 'https://vuetifyjs.com/static/doc-images/cards/road.jpg', flex: 6 },
+    //   { title: 'Best airlines', src: 'https://vuetifyjs.com/static/doc-images/cards/plane.jpg', flex: 6 }
+    // ]
+  }),
   name: 'App'
 }
 </script>
 
 <style scoped>
+  #card-file {
+    border: none;
+    margin: 0px;
+    cursor: pointer;
+  }
+   #card-net {
+    border: none;
+    margin: 0px;
+    cursor: pointer;
+  }
+  #card-simul {
+    border: none;
+    margin: 0px;
+    cursor: pointer;
+  }
+  .side-off {
+    margin-top: 40px;
+  }
   .card {
     border: 2px solid #34495e;
     margin-left: 5px;
@@ -518,5 +528,132 @@ export default {
   .bottom-sheet {
     z-index: 100;
   }
+
+  .card-flex1 {
+  display: flex;
+  min-width: 100%;
+  min-height: 200px;
+  overflow-x: auto;
+  justify-content: space-between;
+}
+
+.card-flex1--content {
+  background-color: #ecf0f1;
+  min-width: 200px;
+  margin: 5px;
+  padding: 5px;
+  color:#616161;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #9ac7bf;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px #ddd inset, 0 2px 2px #fff;
+}
+.card-flex1--content:hover {
+   background: #9FA8DA;
+    box-shadow: 0 0 0 1px #aaa inset, 0 1px 1px #aaa;
+}
+.card-flex1--content:active {
+   background: #9ac7bf;
+    box-shadow: 0 0 0 1px #aaa inset, 0 1px 1px #aaa;
+}
+.card-flex1-column-item-top {
+  flex: 3;
+  align-items: center;
+  justify-content: center;
+}
+.card-flex1-column-item-bottom {
+  flex: 1;
+}
+
+  .card-flex2 {
+  display: flex;
+  min-width: 100%;
+  min-height: 200px;
+  overflow-x: auto;
+  justify-content: space-between;
+}
+
+.card-flex2--content {
+  background-color: #ecf0f1;
+  min-width: 200px;
+  margin: 5px;
+  padding: 5px;
+  color: #616161;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #33ff33;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px #ddd inset, 0 2px 2px #fff;
+}
+.card-flex2--content:hover {
+   background: #64DD17;
+    box-shadow: 0 0 0 1px #aaa inset, 0 1px 1px #aaa;
+}
+.card-flex2--content:active {
+   background: #33ff33 ;
+    box-shadow: 0 0 0 1px #aaa inset, 0 1px 1px #aaa;
+}
+.card-flex2-column-item-top {
+  flex: 3;
+  align-items: center;
+  justify-content: center;
+}
+.card-flex2-column-item-bottom {
+  flex: 1;
+}
+
+  .card-flex3 {
+  display: flex;
+  min-width: 100%;
+  min-height: 200px;
+  overflow-x: auto;
+  justify-content: space-between;
+}
+
+.card-flex3--content {
+  background-color: #ecf0f1;
+  min-width: 200px;
+  margin: 5px;
+  padding: 5px;
+  color: #616161;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #1DE9B6;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px #ddd inset, 0 2px 2px #fff;
+}
+.card-flex3--content:hover {
+   background: #00BFA5;
+    box-shadow: 0 0 0 1px #aaa inset, 0 1px 1px #aaa;
+}
+.card-flex3--content:active {
+   background: #1DE9B6 ;
+    box-shadow: 0 0 0 1px #aaa inset, 0 1px 1px #aaa;
+}
+
+.card-flex3-column-item-top {
+  flex: 3;
+  align-items: center;
+  justify-content: center;
+}
+.card-flex3-column-item-bottom {
+  flex: 1;
+}
+
+.card-flex1::-webkit-scrollbar {
+  display: none;
+}
+.card-flex2::-webkit-scrollbar {
+  display: none;
+}
+
+.card-flex3::-webkit-scrollbar {
+  display: none;
+}
+
 
 </style>
